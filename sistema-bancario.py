@@ -38,8 +38,11 @@ while True:
             print("Número limite de saques diários alcançados, tente novamente amanhã.")
     elif opcao == "e":
         print("Extrato")
-        print(f"Saldo: {saldo:.2f}")
-        print(extrato)
+        if (extrato) : 
+             print(f"Saldo: {saldo:.2f}")
+             print(extrato)
+        else: 
+            print("Não foram realizadas movimentações")
     elif opcao == "q":
         break;
     else: 
